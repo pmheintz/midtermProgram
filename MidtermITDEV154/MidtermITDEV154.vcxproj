@@ -142,6 +142,22 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="employee.cpp" />
+    <ClCompile Include="fullTimeEmployee.cpp" />
+    <ClCompile Include="info.cpp" />
+    <ClCompile Include="mainMethod.cpp" />
+    <ClCompile Include="midTermUI.cpp" />
+    <ClCompile Include="partTimeEmployee.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="employee.h" />
+    <ClInclude Include="fullTimeEmployee.h" />
+    <ClInclude Include="info.h" />
+    <ClInclude Include="midTermUI.h" />
+    <ClInclude Include="partTimeEmployee.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
