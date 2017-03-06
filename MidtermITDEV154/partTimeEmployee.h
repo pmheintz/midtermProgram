@@ -6,9 +6,9 @@ class partTimeEmployee :
 	public employee
 {
 public:
-	partTimeEmployee();
+	partTimeEmployee(int id = 2000);
 	~partTimeEmployee();
-	double calculatePay();
+	float calculatePay(int hours);
 };
 
 #endif

@@ -6,23 +6,23 @@ using namespace std;
 
 class employee
 {
-protected:
+private:
 	string firstName;
 	string lastName;
 	int id;
-	double wage;
+	float wage;
 
 public:
-	employee();
+	employee(int id = 1000);
 	~employee();
-	virtual double calculatePay() = 0;
+	virtual float calculatePay(int hours) = 0;
 	string getFirstName();
 	void setFirstName(string fName);
 	string getLastName();
 	void setLastName(string lName);
 	int getId();
-	double getWage();
-	void setWage(double theWage);
+	float getWage();
+	void setWage(float hourlyWage);
 };
 
 #endif
