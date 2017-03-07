@@ -1,3 +1,8 @@
+/* Paul Heintz heintzpm@gmatc.matc.edu
+* ITDEV-154 Downtown
+* Employee header
+* March 8, 2017 */
+
 #ifndef EMPLOYEE_H
 #define EMPLOYEE_H
 
@@ -6,23 +11,23 @@ using namespace std;
 
 class employee
 {
-private:
-	string firstName;
-	string lastName;
-	int id;
-	float wage;
+	private:
+		string id;
+		string firstName;
+		string lastName;
+		float wage;
 
-public:
-	employee(int id = 1000);
-	~employee();
-	virtual float calculatePay(int hours) = 0;
-	string getFirstName();
-	void setFirstName(string fName);
-	string getLastName();
-	void setLastName(string lName);
-	int getId();
-	float getWage();
-	void setWage(float hourlyWage);
-};
+	public:
+		virtual float calculatePay(float hours) = 0;
+		void setWage(float hourlyWage);
+		float getWage();
+		string getFirstName();
+		string getLastName();
+		string getId();
+		void setFirstName(string first);
+		void setLastName(string last);
+		employee(string theId);
+		~employee(void);
+	};
 
 #endif

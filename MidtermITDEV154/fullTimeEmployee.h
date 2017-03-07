@@ -1,3 +1,8 @@
+/* Paul Heintz heintzpm@gmatc.matc.edu
+* ITDEV-154 Downtown
+* Full time employee header
+* March 8, 2017 */
+
 #ifndef FULLTIMEEMPLOYEE_H
 #define FULLTIMEEMPLOYEE_H
 
@@ -6,9 +11,9 @@ class fullTimeEmployee :
 	public employee
 {
 public:
-	fullTimeEmployee(int id = 1000);
-	~fullTimeEmployee();
-	float calculatePay(int hours);
+	float calculatePay(float hours);
+	fullTimeEmployee(string theId);
+	~fullTimeEmployee(void);
 };
 
 #endif
